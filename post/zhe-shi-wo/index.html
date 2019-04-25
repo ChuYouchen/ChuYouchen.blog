@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>游尘·博思</title>
+<title>这是我 | 游尘·博思</title>
 <link rel="shortcut icon" href="https://chuyouchen.github.io//favicon.ico?v=1556193734538">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://chuyouchen.github.io//styles/main.css">
@@ -68,44 +68,57 @@
   </div>
 </div>
 
+      
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              这是我
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2019-04-24 ·
+              </time>
+              
+            </div>
+            
+            <div class="post-content">
+              <p>一个喜欢写字的人
+有些爱玩游戏
+爱看小说</p>
+
+            </div>
+          </article>
+        </div>
     
         
 
-<div class="archives-container">
-  
-    <h2 class="year">2019</h2>
-    
-      
-        <article class="post">
-          <a href="https://chuyouchen.github.io//post/xiang-ge-zhen-tan-yi-yang-du-hai-ming-wei-de-ming-pian-lesslessbai-xiang-ban-de-qun-shan-greatergreater">
-            <h2 class="post-title">
-              像个侦探一样读海明威的名篇——《白象般的群山》
-              <small>2019-04-25</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-      
-        <article class="post">
-          <a href="https://chuyouchen.github.io//post/zhe-shi-wo">
-            <h2 class="post-title">
-              这是我
-              <small>2019-04-24</small>
-            </h2>
-          </a>
-        </article>
-      
-    
-  
-</div>
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+<div id="gitalk-container"></div>
 
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '324a2fb6137b37529b8d',
+    clientSecret: '71fe2d819db16e519fd223fa61d3e6422af0e3ee',
+    repo: 'https://ChuYouchen.github.io',
+    owner: 'ChuYouchen',
+    admin: ['ChuYouchen'],
+    id: location.pathname,      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
     
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
