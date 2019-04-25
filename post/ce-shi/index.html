@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Gridea</title>
+<title>测试 | Gridea</title>
 <meta name="description" content="温故而知新">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="https://chuyouchen.github.io//favicon.ico?v=1556179529746">
 <link rel="stylesheet" href="https://chuyouchen.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -90,49 +96,54 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://chuyouchen.github.io//post/ce-shi">
-                  <h2 class="post-title">测试</h2>
-                </a>
-                <div class="post-date">
-                  2019-04-25
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
+          <div class="post-detail">
+            <h2 class="post-title">测试</h2>
+            <div class="post-date">2019-04-25</div>
+            
+            <div class="post-content">
+              <p>测试</p>
+<h1 id="测试">测试</h1>
+<h2 id="测试-2">测试</h2>
+<h2 id="测试-是">测试 是</h2>
+<h3 id="见附件费">见附件费</h3>
+<h1 id="反倒是监控里">反倒是监控里</h1>
+<ol>
+<li>也许</li>
+<li>鸡儿</li>
+<li>放到</li>
+</ol>
+<p>反倒是啊</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://chuyouchen.github.io//tag/gridea" class="tag">
+                    Gridea
+                  </a>
+                
               </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
                 <a href="https://chuyouchen.github.io//post/hello-gridea">
-                  <h2 class="post-title">Hello Gridea</h2>
+                  <h3 class="post-title">
+                    Hello Gridea
+                  </h3>
                 </a>
-                <div class="post-date">
-                  2018-12-12
-                </div>
-                <div class="post-abstract">
-                  <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-
-                </div>
               </div>
-              
-                <a class="right" href="https://chuyouchen.github.io//post/hello-gridea">
-                  <div class="feature-container" style="background-image: url('https://chuyouchen.github.io//post-images/hello-gridea.png')">
-                  </div>
-                </a>
-              
-            </article>
-          
+            
 
-          <div class="pagination-container">
-  
-  
-</div>
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -154,6 +165,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+  
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '324a2fb6137b37529b8d',
+        clientSecret: '71fe2d819db16e519fd223fa61d3e6422af0e3ee',
+        repo: 'ChuYouchen.github.io',
+        owner: 'ChuYouchen',
+        admin: ['ChuYouchen'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
